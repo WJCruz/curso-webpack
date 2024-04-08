@@ -1,0 +1,17 @@
+BABEL
+=====
+- Babel te permite hacer que tu código JavaScript sea compatible con todos los navegadores
+- Debes agregar a tu proyecto las siguientes dependencias: npm install -D babel-loader @babel/core @babel/preset-env @babel/plugin-transform-runtime
+- babel-loader nos permite usar babel con webpack
+- @babel/core es babel en general
+- @babel/preset-env trae y te permite usar las ultimas características de JavaScript
+- @babel/plugin-transform-runtime te permite trabajar con todo el tema de asincronismo como ser async y await
+- Debes crear el archivo de configuración de babel el cual tiene como nombre .babelrc
+- Babel te ayuda a transpilar el código JavaScript, a un resultado el cual todos los navegadores lo puedan entender y ejecutar. Trae "extensiones" o plugins las cuales nos permiten tener características más allá del JavaScript común
+
+Plugins
+=================
+- HtmlWebpackPlugin es un complemento para Webpack que simplifica la creación de archivos HTML dinámicamente en función de las salidas generadas por Webpack. Básicamente, automatiza la generación de archivos HTML que incluyen automáticamente los scripts y estilos generados por Webpack, lo que facilita la integración de los recursos generados por Webpack en tus páginas HTML.
+- inject: true, // Esta opción permite la inserción automática de etiquetas css y js
+- MiniCssExtractPlugin simplifica la creación de archivos css
+- CopyPlugin permite copiar archivos o directorios hacia el proyecto final
